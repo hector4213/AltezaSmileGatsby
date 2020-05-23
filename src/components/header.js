@@ -1,20 +1,21 @@
-import React from 'react'
+import React from "react"
+import logo from "../images/logo.svg"
+import headerStyles from "./header.module.scss"
+
 
 const Header = () => {
-    return (
-        <div>
-            <header>
-                <nav>
-                    <img/>
-                    <ul>
-                        <li>Book</li>
-                        <li>FAQ</li>
-                        <li>About us</li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-    )
+  return (
+    <header>
+      <nav className={headerStyles.nav}>
+        <img src={logo} alt="logo" className={headerStyles.logo} />
+        <ul className={headerStyles.navList}>
+          <li className={headerStyles.navItem}>Book</li>
+          <li className={headerStyles.navItem}>FAQS</li>
+          <li className={headerStyles.navItem}>About Us</li>
+        </ul>
+      </nav>
+    </header>
+  )
 }
 
-export default Header;
+export default Header
