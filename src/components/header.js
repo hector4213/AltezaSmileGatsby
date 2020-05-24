@@ -4,6 +4,9 @@ import headerStyles from "./header.module.scss"
 
 
 const Header = () => {
+
+  
+
   return (
     <header className={headerStyles.header}>
       <nav className={headerStyles.nav}>
@@ -13,6 +16,11 @@ const Header = () => {
           <li className={headerStyles.navItem}>FAQS</li>
           <li className={headerStyles.navItem}>About Us</li>
         </ul>
+        <div className={headerStyles.burger}>
+          <div className={headerStyles.line1}></div>
+          <div className={headerStyles.line2}></div>
+          <div className={headerStyles.line3}></div>
+        </div>
       </nav>
     </header>
   )
