@@ -1,7 +1,10 @@
-
+.header {
+    background-color: #E7F8D8;
+    padding:1rem;
+}
 
 .logo {
-    height:150px;
+    height:100px;
     width: 250px;
     padding-left: 30px;
 }
@@ -16,7 +19,8 @@
     align-items: center;
  }
  .nav-item {
-     padding-right: 2rem;
+     padding-right: 1rem;
+     font-size: 2rem;
  }
 
  .nav-item:hover {
