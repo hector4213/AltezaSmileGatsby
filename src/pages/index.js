@@ -1,15 +1,14 @@
 import React from "react"
-import Layout from '../components/layout'
-import '../styles/global.scss'
+import Layout from "../components/layout"
+import Content from "../components/content"
 
 
 const IndexPage = () => {
   return (
     <Layout>
-      Welcome to the site
+      <Content />
     </Layout>
   )
-
 }
 
 export default IndexPage

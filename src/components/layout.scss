@@ -1,0 +1,21 @@
+
+
+
+$primary: #d0f0c0;
+$family-primary: "Abel";
+$box-background-color: $primary;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import '../../node_modules/bulma/bulma.sass';
+
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .site-content {
+    flex-grow: 1;
+  }
