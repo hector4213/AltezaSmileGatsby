@@ -9,14 +9,27 @@ import "../styles/global.scss"
 
 const Footer = () => {
   return (
-    <footer className="hero is-primary">
-      <div className="hero-body">
-        <div className="container">
-          <FontAwesomeIcon icon={faInstagram} />
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faFacebook} />
+    <footer>
+      <nav className="navbar level is-fixed-bottom">
+        <div className="level-left">
+          <div className="level-item">
+            <h1>Alteza Beauty</h1>
+          </div>
         </div>
-      </div>
+        <div className="level-right">
+          <div className="level-item">
+            <a href="https://www.instagram.com/alteza.smile/">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </div>
+          <div className="level-item">
+            <FontAwesomeIcon icon={faTwitter} />
+          </div>
+          <div className="level-item">
+            <FontAwesomeIcon icon={faFacebook} />
+          </div>
+        </div>
+      </nav>
     </footer>
   )
 }

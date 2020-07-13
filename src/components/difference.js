@@ -8,27 +8,32 @@ import professional from "../images/icons/professional.png"
 
 const Difference = () => {
   return (
-    <div className="columns is-vcentered">
-      <ColumnItem
-        logo={lightLogo}
-        title="Our gels are FDA approved and Health Canada approved. Your comfort
+    <section className="section">
+      <div className="container">
+        <h1 className="title has-text-centered">Choose Alteza Smile</h1>
+        <div className="columns is-vcentered">
+          <ColumnItem
+            logo={lightLogo}
+            title="Our gels are FDA approved and Health Canada approved. Your comfort
       is our number one priority"
-      />
-      <ColumnItem
-        logo={peroxLogo}
-        title=" We provide a service that ensure minimal to no sensitivity, thanks to our neutral ph gel formula"
-      />
-      <ColumnItem
-        logo={professional}
-        title="With our extensive training, Alteza smile will ensure that you have
+          />
+          <ColumnItem
+            logo={peroxLogo}
+            title=" We provide a service that ensure minimal to no sensitivity, thanks to our neutral ph gel formula"
+          />
+          <ColumnItem
+            logo={professional}
+            title="With our extensive training, Alteza smile will ensure that you have
             the brightest smile possible"
-      />
-      <ColumnItem
-        logo={certified}
-        title="With our extensive training, Alteza smile will ensure that you have
+          />
+          <ColumnItem
+            logo={certified}
+            title="With our extensive training, Alteza smile will ensure that you have
             the brightest smile possible"
-      />
-    </div>
+          />
+        </div>
+      </div>
+    </section>
   )
 }
 

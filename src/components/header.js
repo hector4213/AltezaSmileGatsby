@@ -4,10 +4,11 @@ import logo from "../images/logo.svg"
 
 const Header = () => {
   return (
-    <header>
-      <nav className="navbar is-primary" role="navigation" aria-label="main-navigation">
+
+      <nav className="navbar is-fixed-top " role="navigation" aria-label="main-navigation">
+        <div className="container">
         <div className="navbar-brand">
-          <a className="navbar-item">
+          <a className="navbar-item" href="">
             <img src={logo} alt="logo" width="112" height="75"/>
           </a>
           <a
@@ -24,19 +25,19 @@ const Header = () => {
         </div>
         <div id="navbaritems" className="navbar-menu">
           <div className="navbar-end">
-            <a className="navbar-item">
+            <a className="navbar-item" href="">
               BOOK
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item" href="">
               PACKAGES
             </a>
-            <a className="navbar-item">
+            <a className="navbar-item" href="">
               INFO
             </a>
           </div>
         </div>
+        </div>
       </nav>
-    </header>
   )
 }
 
