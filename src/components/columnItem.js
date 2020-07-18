@@ -5,9 +5,9 @@ const ColumnItem = (props) => {
     <div className="column">
       <div className="notification is-primary">
         <img src={props.logo} alt="light-icon" />
-        <h1 className="title is-6 is-uppercase">
+        <p className="is-size-6 is-uppercase ">
           {props.title}
-        </h1>
+        </p>
       </div>
     </div>
   )

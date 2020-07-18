@@ -4,8 +4,7 @@ import Video from "./video"
 
 const Content = () => {
   return (
-    <section className="section is-medium">
-      <div className="container">
+    <div className="section">
         <div className="columns">
           <div className="column">
             <Video />
@@ -23,7 +22,6 @@ const Content = () => {
           </div>
         </div>
       </div>
-      </section>
   )
 }
 

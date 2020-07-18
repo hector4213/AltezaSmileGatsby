@@ -1,17 +1,7 @@
 
 
-.main-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-}
-
-.main-content {
-  flex-grow: 1;
-}
-
-$primary: #6abfb0;;
+$section-padding: 3rem 1.5rem;
+$primary: #ddebe8;;
 $family-primary: "Abel";
 $box-background-color: $primary;
 $navbar-background-color:$primary;

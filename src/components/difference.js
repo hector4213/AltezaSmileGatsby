@@ -8,9 +8,7 @@ import professional from "../images/icons/professional.png"
 
 const Difference = () => {
   return (
-    <section className="section">
-      <div className="container">
-        <h1 className="title has-text-centered">Choose Alteza Smile</h1>
+      <div className="container is-fluid">
         <div className="columns is-vcentered">
           <ColumnItem
             logo={lightLogo}
@@ -33,7 +31,6 @@ const Difference = () => {
           />
         </div>
       </div>
-    </section>
   )
 }
 
