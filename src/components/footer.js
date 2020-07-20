@@ -1,5 +1,7 @@
 import React from "react"
 
+import logo from '../images/logo.svg'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
@@ -11,23 +13,24 @@ const Footer = () => {
   return (
     <footer>
       <nav className="navbar level is-fixed-bottom">
-        <div className="level-left">
-          <div className="level-item">
-            <h1>Alteza Beauty</h1>
-          </div>
+        <div className="container">
+          <a className="navbar-item" href="">
+            <img src={logo} alt="logo" width="112" height="75" />
+          </a>
         </div>
-        <div className="level-right">
-          <div className="level-item">
+        <div className="navbar-end">
+          <div className="navbar-item">
             <a href="https://www.instagram.com/alteza.smile/">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
-          <div className="level-item">
-            <FontAwesomeIcon icon={faTwitter} />
-          </div>
-          <div className="level-item">
-            <FontAwesomeIcon icon={faFacebook} />
-          </div>
+        
+        <div className="navbar-item">
+          <FontAwesomeIcon icon={faTwitter} />
+        </div>
+        <div className="navbar-item">
+          <FontAwesomeIcon icon={faFacebook} />
+        </div>
         </div>
       </nav>
     </footer>

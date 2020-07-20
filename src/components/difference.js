@@ -8,7 +8,7 @@ import professional from "../images/icons/professional.png"
 
 const Difference = () => {
   return (
-      <div className="container is-fluid">
+      <div className="section" id="info">
         <div className="columns is-vcentered">
           <ColumnItem
             logo={lightLogo}

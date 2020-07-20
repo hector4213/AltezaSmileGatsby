@@ -6,13 +6,13 @@ import "./layout.scss"
 
 const Layout = ({ children }) => {
   return (
-    <div className="section">
-        <Header />
-        <div className="container">
+    <React.Fragment>
+      <Header />
+      <div className="section">
         {children}
         </div>
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }
 

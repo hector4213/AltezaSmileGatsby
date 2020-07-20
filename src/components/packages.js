@@ -8,7 +8,9 @@ const Packages = () => {
   return (
     <div className="section">
       <div className="container">
-        <h1 className="title has-text-centered">Affordable packages</h1>
+        <h1 className="title has-text-centered" id="packages">
+          Affordable packages
+        </h1>
         <div className="columns">
           <div className="column">
             <div className="box">
@@ -27,7 +29,6 @@ const Packages = () => {
                       gums with vitamin E oil and give you a custom treatment to
                       suit your needs.
                     </p>
-                    <button>Choose</button>
                   </div>
                 </div>
               </article>
@@ -50,7 +51,6 @@ const Packages = () => {
                       gums with vitamin E oil and give you a custom treatment to
                       suit your needs
                     </p>
-                    <button>Choose</button>
                   </div>
                 </div>
               </article>
@@ -72,13 +72,14 @@ const Packages = () => {
                       whitening from Alteza Smile. It is recommended that they
                       come every 4 weeks
                     </p>
-                    <br/>
-                    <button className="is-white">Choose</button>
                   </div>
                 </div>
               </article>
             </div>
           </div>
+        </div>
+        <div className="container has-text-centered">
+        <button className="button is-primary is-inverted">BOOK TODAY</button>
         </div>
       </div>
     </div>

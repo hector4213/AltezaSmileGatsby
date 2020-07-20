@@ -1,15 +1,19 @@
 import React from "react"
 import logo from "../images/logo.svg"
 
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Header = () => {
   return (
-
-      <nav className="navbar is-fixed-top " role="navigation" aria-label="main-navigation">
-        <div className="container">
+    <nav
+      className="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main-navigation"
+    >
+      <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="">
-            <img src={logo} alt="logo" width="112" height="75"/>
+            <img src={logo} alt="logo" width="112" height="75" />
           </a>
           <a
             role="button"
@@ -25,19 +29,19 @@ const Header = () => {
         </div>
         <div id="navbaritems" className="navbar-menu">
           <div className="navbar-end">
-            <a className="navbar-item" href="">
-              BOOK
-            </a>
-            <a className="navbar-item" href="">
-              PACKAGES
-            </a>
-            <a className="navbar-item" href="">
-              INFO
-            </a>
+            <AnchorLink className="navbar-item" to="/#packages" title="nook">
+              <span>BOOK</span>
+            </AnchorLink>
+            <AnchorLink className="navbar-item" to="/#packages" title="packages">
+              <span>PACKAGES</span>
+            </AnchorLink>
+            <AnchorLink className="navbar-item" to="/#info" title="info">
+              <span>INFO</span>
+            </AnchorLink>
           </div>
         </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
   )
 }
 
