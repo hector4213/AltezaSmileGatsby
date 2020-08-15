@@ -13,7 +13,7 @@ const Difference = () => {
     <section className="section">
       <div className="card" id="info">
         <div className="card-content">
-          <div className="columns is-vcentered">
+          <div className="columns ">
             <Bounce left>
               <ColumnItem
                 logo={lightLogo}
@@ -24,7 +24,7 @@ const Difference = () => {
             <Bounce left>
               <ColumnItem
                 logo={peroxLogo}
-                title=" We provide a service that ensures minimal to no sensitivity with our neutral ph gel formula"
+                title="Providing a service with minimal to no sensitivity with our neutral ph gel formula"
               />
             </Bounce>
             <Bounce right>

@@ -5,16 +5,12 @@ const Hero = () => {
     <section className="hero is-primary" style={{ marginBottom: "200px" }}>
       <div className="hero-body">
         <div className="container">
-          <h1 className="title">The Alteza Smile difference</h1>
-          <h2 className="subtitle">Check out of Wall of Smiles</h2>
+          <h3 className="title is-1 has-text-black is-family-secondary has-text-weight-light">
+            We love our customers
+          </h3>
+          <h2 className="subtitle">Check out our Wall of Smiles</h2>
         </div>
       </div>
-      <div
-        className="fb-like"
-        data-share="true"
-        data-width="450"
-        data-show-faces="true"
-      ></div>
     </section>
   )
 }

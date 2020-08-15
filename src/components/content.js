@@ -10,7 +10,9 @@ const Content = () => {
           <Video />
         </div>
         <div className="column">
-          <h3 className="title is-3">Meet your teeth whitening specialist</h3>
+          <h3 className="title is-1 is-family-secondary has-text-weight-light">
+            Meet your teeth whitening specialist
+          </h3>
           <p>
             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum

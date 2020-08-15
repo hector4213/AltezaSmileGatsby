@@ -6,7 +6,6 @@ import logo from "../images/logo.svg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 import "../styles/global.scss"
