@@ -1,13 +1,11 @@
-
 $link: #4a4a4a;
 $section-padding: 3rem 1.5rem;
-$primary: #ddebe8;;
+$primary: #ddebe8;
 $family-primary: "Abel";
 $box-background-color: $primary;
-$navbar-background-color:$primary;
+$navbar-background-color: $primary;
+$footer-background-color: $primary;
+$footer-padding: 1rem 1.5rem 1rem;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import '../../node_modules/bulma/bulma.sass';
-
-
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import "../../node_modules/bulma/bulma.sass";

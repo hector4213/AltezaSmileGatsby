@@ -1,6 +1,8 @@
 import React from "react"
 
-import logo from '../images/logo.svg'
+import { Link } from "gatsby"
+
+import logo from "../images/logo.svg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
@@ -11,26 +13,24 @@ import "../styles/global.scss"
 
 const Footer = () => {
   return (
-    <footer>
-      <nav className="navbar level is-fixed-bottom">
-        <div className="container">
-          <a className="navbar-item" href="">
-            <img src={logo} alt="logo" width="112" height="75" />
-          </a>
-        </div>
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <a href="https://www.instagram.com/alteza.smile/">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
+    <footer className="footer is-primary">
+      <nav className="level is-mobile">
+        <div className="level-left">
+          <div className="level-item">
+            <Link to="/">
+              <img src={logo} alt="logo" width="112" height="28" />
+            </Link>
           </div>
-        
-        <div className="navbar-item">
-          <FontAwesomeIcon icon={faTwitter} />
         </div>
-        <div className="navbar-item">
-          <FontAwesomeIcon icon={faFacebook} />
-        </div>
+        <div className="level-right">
+          <a
+            className="level-item"
+            href="https://www.instagram.com/alteza.smile/"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+
+          <FontAwesomeIcon icon={faFacebook} className="level-item" />
         </div>
       </nav>
     </footer>

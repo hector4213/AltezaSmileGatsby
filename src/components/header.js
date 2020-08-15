@@ -1,9 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import logo from "../images/logo.svg"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { Link } from "gatsby"
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false)
+
   return (
     <nav
       className="navbar is-fixed-top"
@@ -16,8 +19,9 @@ const Header = () => {
             <img src={logo} alt="logo" width="112" height="75" />
           </a>
           <a
+            onClick={() => setIsActive(!isActive)}
             role="button"
-            className="navbar-burger burger"
+            className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbaritems"
@@ -27,12 +31,19 @@ const Header = () => {
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div id="navbaritems" className="navbar-menu">
+        <div
+          id="navbaritems"
+          className={`navbar-menu ${isActive ? "is-active" : ""}`}
+        >
           <div className="navbar-end">
-            <AnchorLink className="navbar-item" to="/#packages" title="nook">
+            <Link className="navbar-item" to="/book" title="book">
               <span>BOOK</span>
-            </AnchorLink>
-            <AnchorLink className="navbar-item" to="/#packages" title="packages">
+            </Link>
+            <AnchorLink
+              className="navbar-item"
+              to="/#packages"
+              title="packages"
+            >
               <span>PACKAGES</span>
             </AnchorLink>
             <AnchorLink className="navbar-item" to="/#info" title="info">
